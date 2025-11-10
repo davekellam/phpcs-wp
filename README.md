@@ -1,4 +1,5 @@
-# Plank PHPCS Configuration
+# PHPCS Configuration
+
 Composer library to provide drop in installation and configuration of [WPCS](https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards) and [PHPCompatibilityWP](https://github.com/PHPCompatibility/PHPCompatibilityWP), setting reasonable defaults for WordPress development with nearly zero configuration.
 
 ## Installation
@@ -6,7 +7,7 @@ Composer library to provide drop in installation and configuration of [WPCS](htt
 Install the library via Composer:
 
 ```bash
-$ composer require --dev plank/wp-phpcs-composer:master
+$ composer require --dev davekellam/wp-phpcs-composer:main
 ```
 
 That's it!
@@ -37,7 +38,7 @@ $ composer run lint
 
 ### Continuous Integration
 
-PHPCS Configuration plays nicely with Continuous Integration solutions. Out of the box, the library loads the `Plank-Default` ruleset, and checks for syntax errors for PHP 7 or higher.
+PHPCS Configuration plays nicely with Continuous Integration solutions. Out of the box, the library loads the `DK-Default` ruleset, and checks for syntax errors for PHP 7 or higher.
 
 To override the default PHP version check, set the `--runtime-set testVersion 7.0-` configuration option. Example for PHP version 7.2 and above:
 
@@ -51,11 +52,11 @@ Note that you can only overrule PHP version check from the command-line.
 
 ### IDE Integration
 
-Some IDE integrations of PHPCS fail to register the `Plank-Default` ruleset. In order to rectify this, place `.phpcs.xml.dist` at your project root:
+Some IDE integrations of PHPCS fail to register the `DK-Default` ruleset. In order to rectify this, place `phpcs.xml` at your project root:
 
 ```xml
 <?xml version="1.0"?>
 <ruleset name="Project Rules">
-	<rule ref="Plank-Default" />
+	<rule ref="DK-Default" />
 </ruleset>
 ```

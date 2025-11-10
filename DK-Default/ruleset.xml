@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<ruleset name="Plank-Default">
-	<description>A base ruleset that all other Plank rulesets should extend.</description>
+<ruleset name="DK-Default">
+	<description>A base ruleset that other projects can extend</description>
 
 	<exclude-pattern>*/phpunit.xml*</exclude-pattern>
 	<exclude-pattern>*/languages/*</exclude-pattern>
