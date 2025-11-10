@@ -7,7 +7,6 @@
 	<exclude-pattern>*/tests/*</exclude-pattern>
 
 	<!-- Third-party code -->
-	<exclude-pattern>*/bower-components/*</exclude-pattern>
 	<exclude-pattern>*/node_modules/*</exclude-pattern>
 	<exclude-pattern>*/vendor/*</exclude-pattern>
 
@@ -65,8 +64,8 @@
 		<exclude name="WordPress.WP.GlobalVariablesOverride.Prohibited"/>
 	</rule>
 
-	<!-- Sets the minimum supported WP version to 6.2, which is over a year old. -->
-	<config name="minimum_wp_version" value="6.2" />
+	<!-- Sets the minimum supported WP version to 6.7, which is over a year old. -->
+	<config name="minimum_wp_version" value="6.7" />
 
 	<!-- Make missing translator comment a warning. -->
 	<rule ref="WordPress.WP.I18n.MissingTranslatorsComment">
@@ -82,5 +81,5 @@
 	<rule ref="PHPCompatibilityWP" />
 
 	<!-- PHP version check. -->
-	<config name="testVersion" value="7.4-"/>
+	<config name="testVersion" value="8.2-"/>
 </ruleset>
